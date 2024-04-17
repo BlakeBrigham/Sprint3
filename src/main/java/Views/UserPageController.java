@@ -62,6 +62,9 @@ public class UserPageController
 		user.toggleFollowing(new UserModel("Teresa Deng", "", "", ""));
 		user.toggleFollowing(new UserModel("Calvin Hobbes", "", "", ""));
 		user.toggleFollowing(new UserModel("Mr. President", "", "", ""));
+		
+		//Sample description
+		user.setDescription("Hi there! You may not know this, but I am actually \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.");
 
 	}
 	
@@ -109,6 +112,9 @@ public class UserPageController
     public void onClickViewDescription(ActionEvent action)
     {
     	
+    	ObservableList<String> description = FXCollections.observableArrayList();
+    	description.add(user.getDescription());
+    	UserPageContentList.setItems(description);
     }
     
     @FXML

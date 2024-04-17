@@ -12,7 +12,7 @@ public class UserModel
 	public String displayName;
 	public String job;
 	public String company;
-	public String description;
+	String description;
 	ObservableList<UserModel> following =FXCollections.observableArrayList();
 	ObservableList<UserModel> followers = FXCollections.observableArrayList();
 	ObservableList<String> posts = FXCollections.observableArrayList();
@@ -62,6 +62,9 @@ public class UserModel
 		this.company = company;
 	}
 
+	//This is awesomely hacky. Basically, our description is a single
+	//entry in a list, which requires doing violence to the typing of
+	//the description.
 	public String getDescription() {
 		return description;
 	}
