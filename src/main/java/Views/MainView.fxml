@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.LogInController">
+   <top>
+      <HBox fx:id="MainViewTopbar" alignment="CENTER" prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Nexus">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+               </children></HBox>
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <VBox fx:id="MainViewContent" prefHeight="200.0" prefWidth="100.0" spacing="50.0" BorderPane.alignment="TOP_LEFT">
+         <children>
+            <TextField prefHeight="20.0" prefWidth="400.0" promptText="Enter your Username..." />
+            <TextField promptText="Enter your password..." />
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#OnClickLogin" text="Login">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets top="30.0" />
+         </BorderPane.margin>
+      </VBox>
+   </center>
+</BorderPane>
