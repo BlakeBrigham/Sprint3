@@ -7,4 +7,5 @@ public interface LogInSideBarVTMInterface
 	public void showSidebarView();
 	public void showHomeView();
 	public void showLoginView();
+	public void showUserFollowers();
 }

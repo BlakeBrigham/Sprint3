@@ -16,7 +16,7 @@
 
 <BorderPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.UserPageController">
    <center>
-      <ListView fx:id="UserPageViewContentList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+      <ListView fx:id="UserPageContentList" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
    </center>
    <top>
       <BorderPane prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
@@ -74,27 +74,27 @@
    <right>
       <TilePane prefHeight="520.0" prefWidth="121.0" vgap="40.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="UserPageViewFollowersButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="123.0" text="Followers">
+            <Button fx:id="UserPageViewFollowersButton" mnemonicParsing="false" onAction="#onClickViewFollowers" prefHeight="54.0" prefWidth="123.0" text="Followers">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="UserPageViewFollowingButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="123.0" text="Following">
+            <Button fx:id="UserPageViewFollowingButton" mnemonicParsing="false" onAction="#onClickViewFollowing" prefHeight="54.0" prefWidth="123.0" text="Following">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="UserPageViewPostsButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="123.0" text="Posts">
+            <Button fx:id="UserPageViewPostsButton" mnemonicParsing="false" onAction="#onClickViewPosts" prefHeight="54.0" prefWidth="123.0" text="Posts">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="UserPageViewDescButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="123.0" text="Description">
+            <Button fx:id="UserPageViewDescButton" mnemonicParsing="false" onAction="#onClickViewDescription" prefHeight="54.0" prefWidth="123.0" text="Description">
                <font>
                   <Font size="16.0" />
                </font>
             </Button>
-            <Button fx:id="UserPageViewJobsButton" mnemonicParsing="false" prefHeight="54.0" prefWidth="123.0" text="Jobs">
+            <Button fx:id="UserPageViewJobsButton" mnemonicParsing="false" onAction="#onClickViewJobs" prefHeight="54.0" prefWidth="123.0" text="Jobs">
                <font>
                   <Font size="16.0" />
                </font>

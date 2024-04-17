@@ -3,6 +3,7 @@ package Models;
 import java.io.IOException;
 
 import Views.SidebarController;
+import Views.UserPageController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
@@ -83,6 +84,10 @@ public class LogInSideBarVTM implements LogInSideBarVTMInterface {
 		{
 			Node view = loader.load();
 			mainview.setCenter(view);
+			UserPageController cont = loader.getController();
+			UserModel user = new UserModel("Sarah", "Developer", "Amaazon", "Another code monkey");
+			cont.setModel(this, user);
+			cont.fillUserPage();
 		} catch (IOException e)
 		{
 			// TODO Auto-generated catch block
@@ -106,6 +111,18 @@ public class LogInSideBarVTM implements LogInSideBarVTMInterface {
 			e.printStackTrace();
 		}
 	}
+	
+	/**
+	 * 
+	 * USER PAGE TRANSITIONS!!!!!
+	 */
+	@Override
+	public void showUserFollowers()
+	{
+		System.out.println("Got it boss, showing followers!");
+	}
+
+	
 	
 	
 }
