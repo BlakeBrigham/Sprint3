@@ -37,4 +37,9 @@ public class PostModel
 			this.likers.remove(liker);
 		}
 	}
+	
+	public String getContent()
+	{
+		return this.content;
+	}
 }

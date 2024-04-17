@@ -15,7 +15,7 @@ public class UserModel
 	String description;
 	ObservableList<UserModel> following =FXCollections.observableArrayList();
 	ObservableList<UserModel> followers = FXCollections.observableArrayList();
-	ObservableList<String> posts = FXCollections.observableArrayList();
+	ObservableList<PostModel> posts = FXCollections.observableArrayList();
 	
 	/**
 	 * @param displayName
@@ -35,7 +35,11 @@ public class UserModel
 	 * Setters and getters.
 	 */
 	public void addPost(String content) {
-		this.posts.add(content);
+		//this.posts.add(content);
+		PostModel newPost = new PostModel(content, this);
+		storeModel globalContent = storeModel.getInstance();
+		globalContent.addPost(newPost);
+		this.posts.add(newPost);
 	}
 
 	public String getDisplayName() {
@@ -106,7 +110,7 @@ public class UserModel
 		}
 	}
 
-	public ObservableList<String> getPosts() {
+	public ObservableList<PostModel> getPosts() {
 		return posts;
 	}
 }

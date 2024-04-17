@@ -1,6 +1,7 @@
 package Views;
 
 import Models.LogInSideBarVTMInterface;
+import Models.PostModel;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -41,12 +42,33 @@ public class UserPageController
 		String employment = (user.getJob() + "@" + user.getCompany());
 		
 		UserPageViewJobTitle.setText(employment);
+		UserModel one = new UserModel("Jimmy John", "", "", "");
+		UserModel two = new UserModel("Captain John", "", "", "");
+		UserModel three = new UserModel("Millard Filmore", "", "", "");
+		UserModel four = new UserModel("Tsai Ing-wen", "", "", "");
+		
+		/**
+		//Sample data for followers
+		user.toggleFollower(one);
+		user.toggleFollower(two);
+		user.toggleFollower(three);
+		user.toggleFollower(four);
+		//UserPageContentList.setItems(user.getPosts());
+		 **/
+		 
 		
 		//Sample data for posts
 		user.addPost("I'm starting a new job today!");
 		user.addPost("I got fired today!");
 		user.addPost("I'm joining a rebel group today!");
 		user.addPost("I'm becoming an artist today!");
+    	ObservableList<String> postContent = FXCollections.observableArrayList();
+    	for (PostModel post : user.getPosts())
+    	{
+    		postContent.add(post.getContent());
+    	}
+    	
+    	UserPageContentList.setItems(postContent);
 		
 		
 		//Sample data for followers
@@ -54,7 +76,7 @@ public class UserPageController
 		user.toggleFollower(new UserModel("Captain John", "", "", ""));
 		user.toggleFollower(new UserModel("Millard Filmore", "", "", ""));
 		user.toggleFollower(new UserModel("Tsai Ing-wen", "", "", ""));
-		UserPageContentList.setItems(user.getPosts());
+		//UserPageContentList.setItems(user.getPosts());
 		
 		//Sample data for following
 		user.toggleFollowing(new UserModel("Bill Clinton", "", "", ""));
@@ -105,7 +127,14 @@ public class UserPageController
     @FXML
     public void onClickViewPosts(ActionEvent action)
     {    	
-    	UserPageContentList.setItems(user.getPosts());
+    	
+    	ObservableList<String> postContent = FXCollections.observableArrayList();
+    	for (PostModel post : user.getPosts())
+    	{
+    		postContent.add(post.getContent());
+    	}
+    	
+    	UserPageContentList.setItems(postContent);
     }
     
     @FXML

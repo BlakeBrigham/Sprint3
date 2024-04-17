@@ -3,6 +3,7 @@ package Main;
 import java.io.IOException;
 
 import Models.LogInSideBarVTM;
+import Models.storeModel;
 import Views.LogInController;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
