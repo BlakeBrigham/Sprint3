@@ -60,7 +60,7 @@ public class LogInSideBarVTM implements LogInSideBarVTMInterface {
 		try
 		{
 			Node view = loader.load();
-			mainview.setCenter(view);
+			mainview.setLeft(view);
 			SidebarController cont = loader.getController();
 			cont.setModel(this);
 		} catch (IOException e)
@@ -68,7 +68,7 @@ public class LogInSideBarVTM implements LogInSideBarVTMInterface {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
+		showUserPageView();
 
 	}
 
