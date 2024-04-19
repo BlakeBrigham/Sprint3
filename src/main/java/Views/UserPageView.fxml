@@ -56,7 +56,7 @@
          <right>
             <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
                <children>
-                  <Button fx:id="UserPageViewEditButton" mnemonicParsing="false" prefHeight="39.0" prefWidth="70.0" text="EDIT">
+                  <Button fx:id="UserPageViewEditButton" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="39.0" prefWidth="70.0" text="EDIT">
                      <font>
                         <Font size="16.0" />
                      </font>

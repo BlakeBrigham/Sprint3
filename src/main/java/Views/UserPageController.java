@@ -146,6 +146,13 @@ public class UserPageController
     	UserPageContentList.setItems(description);
     }
     
+    
+    @FXML
+    public void onClickEdit(ActionEvent action)
+    {
+    	vtm.showEditView();
+    }
+    
     @FXML
     public void onClickViewJobs(ActionEvent action)
     {

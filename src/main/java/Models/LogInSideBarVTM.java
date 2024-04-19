@@ -2,8 +2,11 @@ package Models;
 
 import java.io.IOException;
 
+import Views.EditController;
 import Views.SidebarController;
 import Views.UserPageController;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.layout.BorderPane;
@@ -111,6 +114,28 @@ public class LogInSideBarVTM implements LogInSideBarVTMInterface {
 			e.printStackTrace();
 		}
 	}
+	
+    @FXML
+    public void showEditView()
+    {
+    	System.out.println("In the edit");
+    	FXMLLoader loader = new FXMLLoader();
+    	loader.setLocation(LogInSideBarVTM.class
+    			.getResource("../Views/EditPage.fxml"));
+    	
+    	try
+    	{
+    		Node view = loader.load();
+    		mainview.setCenter(view);
+    		//EditController cont = loader.getController();
+    		//cont.setModel(this);
+    	} catch(IOException e)
+    	{
+    		e.printStackTrace();
+    	}
+    }
+    
+    
 	
 	/**
 	 * 

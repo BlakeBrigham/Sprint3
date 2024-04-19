@@ -7,8 +7,7 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Views.EditController">
    <left>
       <VBox alignment="TOP_CENTER" prefHeight="288.0" prefWidth="199.0" spacing="40.0" BorderPane.alignment="CENTER">
          <BorderPane.margin>
@@ -51,10 +50,10 @@
    <bottom>
       <BorderPane prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <right>
-            <Button mnemonicParsing="false" onAction="#onClickAccept" prefHeight="59.0" prefWidth="126.0" text="Accept" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="126.0" text="Accept" BorderPane.alignment="CENTER" />
          </right>
          <left>
-            <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="59.0" prefWidth="126.0" text="Cancel" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="126.0" text="Cancel" BorderPane.alignment="CENTER" />
          </left>
       </BorderPane>
    </bottom>
