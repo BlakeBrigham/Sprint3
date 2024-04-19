@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <left>
+      <VBox alignment="TOP_CENTER" prefHeight="288.0" prefWidth="199.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="40.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="ExampleEditType1" text="Example Edit Type" />
+            <Label fx:id="ExampleEditType2" text="Example Edit Type" />
+            <Label fx:id="ExampleEditType3" text="Example Edit Type" />
+            <Label fx:id="ExampleEditType4" text="Example Edit Type" />
+         </children>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="288.0" prefWidth="193.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="ExampleNewText1" promptText="Example New Text" />
+            <TextField fx:id="ExampleNewText2" promptText="Example New Text" />
+            <TextField fx:id="ExampleNewText3" promptText="Example New Text" />
+            <TextField fx:id="ExampleNewText4" promptText="Example New Text" />
+         </children>
+         <BorderPane.margin>
+            <Insets top="40.0" />
+         </BorderPane.margin>
+      </VBox>
+   </right>
+   <center>
+      <VBox alignment="TOP_CENTER" prefHeight="328.0" prefWidth="211.0" spacing="40.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets top="40.0" />
+         </BorderPane.margin>
+         <children>
+            <Label fx:id="ExampleCurrentText1" text="Example Current Text" />
+            <Label fx:id="ExampleEditType2" text="Example Current Text" />
+            <Label fx:id="ExampleEditType3" text="Example Current Text" />
+            <Label fx:id="ExampleEditType4" text="Example Current Text" />
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <BorderPane prefHeight="72.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <right>
+            <Button mnemonicParsing="false" onAction="#onClickAccept" prefHeight="59.0" prefWidth="126.0" text="Accept" BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="59.0" prefWidth="126.0" text="Cancel" BorderPane.alignment="CENTER" />
+         </left>
+      </BorderPane>
+   </bottom>
+</BorderPane>
