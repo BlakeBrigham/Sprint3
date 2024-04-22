@@ -32,12 +32,12 @@
                                  <children>
                                     <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="John Smith">
+                                          <Text fx:id="nameplateName" strokeType="OUTSIDE" strokeWidth="0.0" text="John Smith">
                                              <font>
                                                 <Font size="21.0" />
                                              </font>
                                           </Text>
-                                          <HBox prefHeight="100.0" prefWidth="200.0" />Follow
+                                          <HBox prefHeight="100.0" prefWidth="200.0" />
                                           <Button alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" HBox.hgrow="NEVER">
                                              <HBox.margin>
                                                 <Insets left="200.0" />
@@ -47,7 +47,7 @@
                                     </HBox>
                                     <HBox prefHeight="100.0" prefWidth="200.0">
                                        <children>
-                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Distinguished Senior Vice-Fellow at Appamagoolesoftflixforce">
+                                          <Text fx:id="nameplateJob" strokeType="OUTSIDE" strokeWidth="0.0" text="Distinguished Senior Vice-Fellow at Appamagoolesoftflixforce">
                                              <font>
                                                 <Font size="19.0" />
                                              </font>
