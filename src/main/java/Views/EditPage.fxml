@@ -53,7 +53,7 @@
             <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="126.0" text="Accept" BorderPane.alignment="CENTER" />
          </right>
          <left>
-            <Button mnemonicParsing="false" prefHeight="59.0" prefWidth="126.0" text="Cancel" BorderPane.alignment="CENTER" />
+            <Button mnemonicParsing="false" onAction="#onClickCancel" prefHeight="59.0" prefWidth="126.0" text="Cancel" BorderPane.alignment="CENTER" />
          </left>
       </BorderPane>
    </bottom>
