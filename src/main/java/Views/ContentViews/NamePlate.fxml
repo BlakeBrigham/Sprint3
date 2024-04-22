@@ -37,7 +37,7 @@
                                                 <Font size="21.0" />
                                              </font>
                                           </Text>
-                                          <HBox prefHeight="100.0" prefWidth="200.0" />Follow
+                                          <HBox prefHeight="100.0" prefWidth="200.0" />
                                           <Button alignment="CENTER_RIGHT" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" scaleX="1.5" scaleY="1.5" text="" HBox.hgrow="NEVER">
                                              <HBox.margin>
                                                 <Insets left="200.0" />

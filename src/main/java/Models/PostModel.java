@@ -42,4 +42,29 @@ public class PostModel
 	{
 		return this.content;
 	}
+	
+	public int getLikes()
+	{
+		return this.likes;
+	}
+	
+	public UserModel getOP()
+	{
+		return this.originalPoster;
+	}
+	
+	public ArrayList<PostModel> getComments()
+	{
+		return this.comments;
+	}
+	
+	public String getDatePosted()
+	{
+		return this.creationDateTime.toString();
+	}
+	
+	public ArrayList<UserModel> getLikers()
+	{
+		return this.likers;
+	}
 }
