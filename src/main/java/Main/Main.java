@@ -1,5 +1,5 @@
 package Main;
-
+import Models.LogInSideBarVTMInterface;
 import java.io.IOException;
 
 import Models.LogInSideBarVTM;
@@ -23,9 +23,9 @@ public class Main extends Application {
 		
 		System.out.println("Login clicked");
 		LogInController cont = loader.getController();
-		LogInSideBarVTM vm = new LogInSideBarVTM(view);
+		LogInSideBarVTMInterface vm = new LogInSideBarVTM(view);
 		cont.setModel(vm);
-		vm.showLoginView();
+		vm.showHomePageView();
 		
 		Scene s = new Scene(view);
 		stage.setScene(s);
